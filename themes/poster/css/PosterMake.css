@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+}
+.box{
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    background:url("../images/bg_make.png")no-repeat center top ;
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 115vh;
+}
+.click-Tc{
+    position: fixed;
+    right: 0px;
+    top: 4rem;
+    z-index: 9999;
+    background: #FF1D92;
+    padding: 5px 12px 4px 15px;
+    border-radius: 20px 0 0 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+}
+a{
+    background-color:transparent ;
+    text-decoration: none;
+    color: white;
+}
+
+.box-point{
+    width: 100%;
+    margin-top: .5rem;
+}
+.IWant{
+    width: 2.8rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>我为元界DNA打Call</title>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="css/css.css?1jg114">
+    <script src="js/jquery.js"></script>
+</head>
+<style>
+    .box_top_new{
+        width: 75%;
+        margin: 0.4rem auto;
+    }
+    .DaCall{
+        width: 75%;
+        margin: 3rem auto 0 auto;
+    }
+    .box_bottom_new{
+        width: 100%;
+        margin: -.5rem auto;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="box_top_new">
+        <img src="images/DaCall02.png" alt="" width="100%">
+    </div>
+    <div class="DaCall">
+        <img src="images/DaCall03.png" alt="" width="100%">
+    </div>
+     <div class="inviteZh">
+         <img src="images/CallInvite.png" alt="" width="100%">
+     </div>
+    <div class="box_bottom_new">
+        <img src="images/DaCall01.png" alt="" width="100%">
+    </div>
+
+</div>
+
+</body>
+<script>
+    $(".inviteZh").click(function () {
+        location.href='/make';
+    });
+</script>
+</html>

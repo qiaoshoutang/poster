@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 115vh;
+    background: url("../images/CallMake.png")no-repeat top center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.box-cricle{
+    position: absolute;
+    z-index:0 ;
+    bottom: 5%;
+}
+.Fill-Information{
+    width: 85%;
+    margin: 0rem auto 0 auto;
+    position: relative;
+    z-index: 99;
+}
+.Fill-Information li{
+    width: 100%;
+    text-align: left;
+    font-size: 0px;
+    display: inline-block;
+    overflow: hidden;
+}
+.user-information{
+    font-size: .3rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: white;
+    height: .7rem;
+    width: 100%;
+    display: inline-block;
+    line-height: .7rem;
+}
+.User-name,.User-identity,.User-identity-first{
+    width: 100%;
+    background: white;
+    line-height: .6rem;
+    height: .7rem;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    text-align: left;
+    text-indent: .5em;
+    font-size: .3rem;
+}
+.User-identity-first{
+    margin-top: .1rem;
+}
+.User-identity{
+    margin-top: .4rem;
+}
+input{
+    position: relative;
+    z-index: 666;
+    display: block;
+    float: left;
+}
+input::-webkit-input-placeholder {
+    color: #cfcfcf;
+    font-size: .25rem;
+}
+input:-moz-placeholder {
+    color: #cfcfcf
+}
+input:-ms-input-placeholder {
+    color: #cfcfcf;
+}
+.Tips{
+    text-align: center;
+    color: white;
+    font-size: .2rem;
+    position: relative;
+    top: .1rem;
+}
+.Make-Poster{
+    width: 100%;
+    text-align: center;
+    margin: .5rem auto 0 auto;
+    position: relative;
+    z-index: 99;
+}
+.Make-Poster img{
+    width: 50%;
+}
+.box-imgbox{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(255,255,255,0.6);
+    z-index: 999;
+    display: none;
+}
+.box-img{
+    width: 65%;
+    margin: 1rem auto 0 auto;
+}
+.box-img img{
+    width: 100%;
+    position: relative;
+}
+.Preservation-Img{
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: .3rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.close-imgbox{
+    position: absolute;
+    top: 0.7rem;
+    right: 0.8rem;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    color: black;
+    background: white;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .3rem;
+    z-index: 9999;
+}
+.click-Tc{
+    position: fixed;
+    right: 0px;
+    top: 2.7rem;
+    z-index: 999;
+    background: #FF1D92;
+    padding: 5px 12px 4px 15px;
+    border-radius: 20px 0 0 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+}
+a{
+    background-color:transparent ;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (device-width: 375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+    .box-cricle{
+        bottom: 25%;
+    }
+    .box-img{
+        width: 70%;
+    }
+    .close-imgbox{
+        right:.7rem;
+    }
+    .Fill-Information{
+        width: 85%;
+        margin: .1rem auto 0 auto;
+        position: relative;
+        z-index: 99;
+    }
+    .Make-Poster{
+        margin: 1rem auto 0 auto;
+    }
+}
