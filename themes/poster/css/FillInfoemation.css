@@ -9,7 +9,7 @@
     max-width: 640px;
     margin: 0 auto;
     height: 115vh;
-    background: url("../images/CallMake.png")no-repeat top center;
+    background: url("../images/DaCall.jpg")no-repeat top center;
     background-size: 100% 100%;
     position: relative;
     overflow: hidden;
@@ -102,7 +102,7 @@ input:-ms-input-placeholder {
     display: none;
 }
 .box-img{
-    width: 65%;
+    width:80%;
     margin: 1rem auto 0 auto;
 }
 .box-img img{
@@ -120,7 +120,7 @@ input:-ms-input-placeholder {
 .close-imgbox{
     position: absolute;
     top: 0.7rem;
-    right: 0.8rem;
+    right: 0.4rem;
     width: .5rem;
     height: .5rem;
     border-radius: 50%;
@@ -152,14 +152,17 @@ a{
 }
 
 @media only screen and (device-width: 375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+    .box{
+        height: 100vh;
+    }
     .box-cricle{
         bottom: 25%;
     }
     .box-img{
-        width: 70%;
+        width: 80%;
     }
     .close-imgbox{
-        right:.7rem;
+        right:.3rem;
     }
     .Fill-Information{
         width: 85%;

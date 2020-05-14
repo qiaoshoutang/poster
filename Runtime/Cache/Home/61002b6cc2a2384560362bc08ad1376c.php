@@ -28,12 +28,16 @@
 </head>
 <style>
     .box_top_new{
-        width: 77%;
-        margin: 0.3rem auto 0 auto;
+        width: 57%;
+        margin: 1rem auto 0 auto;
+    }
+    .box_bottom_new{
+        width: 55%;
+        margin: .5rem auto;
     }
 </style>
 <body>
-<div style="display: none"><img src="images/poster01.jpg" alt=""></div>
+<!--<div style="display: none"><img src="images/DaCall.jpg" alt=""></div>-->
 <div class="box">
     <!--邀请函-->
     <div class="box-imgbox">
@@ -75,6 +79,10 @@
     <div class="Make-Poster">
         <img src="images/MakeCall.png" alt="">
     </div>
+    <!--底部时间-->
+    <div class="box_bottom_new">
+        <img src="images/DaCall01.png" alt="" width="100%">
+    </div>
 </div>
 </body>
 <script>
@@ -88,7 +96,7 @@
         var user_name=$("input[name='user-name']").val();
         var first=$("input[name='User-identity-first']").val();
         var second=$("input[name='User-identity-second']").val();
-
+        var third=$("input[name='User-identity-thired']").val();
 
         if(user_name==''||user_name=='null'){
             layer.msg('您的名字不能为空');
@@ -102,11 +110,15 @@
         }if($.trim(second).length>25){
             layer.msg('您身份2的填写大于25字');
             return false
+        }if($.trim(third).length>25){
+            layer.msg('您身份3的填写大于25字');
+            return false
         }else {
+            $(".box-imgbox").show()
             $.ajax({
                 type:"post",
                 url:"/index.php/Home/Ajax/getPoster",
-                data:{user_name:user_name,first:first,second:second},
+                data:{user_name:user_name,first:first,second:second,third:third,language:'zh'},
                 dataType:'json',
                 success:function(data){
                     if(data.code==1){

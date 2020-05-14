@@ -27,16 +27,16 @@ class SiteController extends BaseController {
         
         if(empty($word3)){
             $img->open($mould)
-            ->text($word1,$nameFont,'50','#ffffff', 5,array(0,130))
-            ->text($word1,$nameFont,'50','#ffffff', 5,array(1,130))
-            ->text($word2,'./Public/font/pf.ttf','23','#ffffff', 5,array(0,210))
+            ->text($word1,$nameFont,'50','#ffffff', 5,array(0,-10))
+            ->text($word1,$nameFont,'50','#ffffff', 5,array(1,-10))
+            ->text($word2,'./Public/font/pf.ttf','24','#ffffff', 5,array(0,70))
             ->save($path);
         }else{
             $img->open($mould)
-            ->text($word1,$nameFont,'50','#ffffff', 5,array(0,110))
-            ->text($word1,$nameFont,'50','#ffffff', 5,array(1,110))
-            ->text($word2,'./Public/font/pf.ttf','23','#ffffff', 5,array(0,190))
-            ->text($word3,'./Public/font/pf.ttf','23','#ffffff', 5,array(0,235))
+            ->text($word1,$nameFont,'50','#ffffff', 5,array(0,-15))
+            ->text($word1,$nameFont,'50','#ffffff', 5,array(1,-15))
+            ->text($word2,'./Public/font/pf.ttf','24','#ffffff', 5,array(0,60))
+            ->text($word3,'./Public/font/pf.ttf','24','#ffffff', 5,array(0,105))
             ->save($path);
         }
         
