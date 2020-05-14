@@ -117,7 +117,7 @@
             $(".box-imgbox").show()
             $.ajax({
                 type:"post",
-                url:"/index.php/Home/Ajax/getPoster",
+                url:"/Home/Ajax/getPoster",
                 data:{user_name:user_name,first:first,second:second,third:third,language:'zh'},
                 dataType:'json',
                 success:function(data){
